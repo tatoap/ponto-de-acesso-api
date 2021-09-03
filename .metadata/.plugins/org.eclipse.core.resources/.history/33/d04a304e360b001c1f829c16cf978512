@@ -1,0 +1,30 @@
+package com.digitalinnovationone.v1.assembler;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.digitalinnovationone.model.Cidade;
+import com.digitalinnovationone.model.Estado;
+import com.digitalinnovationone.v1.input.CidadeInput;
+import com.digitalinnovationone.v1.input.EstadoInput;
+
+@Component
+public class EstadoInputDisassembler {
+
+	@Autowired
+	private ModelMapper modelMapper;
+	
+	public Estado toDomainObject(EstadoInput estadoInput) {
+		
+		return modelMapper.map(estadoInput, Estado.class);
+		
+	}
+	
+	public void copyToDomainObject(EstadoInput estadoInput, Estado estado) {
+		
+		modelMapper.map(estadoInput, estado);
+		
+	}
+	
+}

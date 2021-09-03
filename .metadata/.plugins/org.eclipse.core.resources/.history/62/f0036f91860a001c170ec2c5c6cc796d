@@ -1,0 +1,71 @@
+package com.digitalinnovationone.model;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
+import javax.persistence.ManyToOne;
+import javax.persistence.MapsId;
+import javax.persistence.Table;
+
+import com.digitalinnovationone.model.id.EntidadeBaseLong;
+
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "banco_horas")
+public class BancoHoras extends EntidadeBaseLong {
+
+	@EmbeddedId
+	private BancoHorasId bancoHorasId;
+	
+	@MapsId("movimentacaoId")
+	@ManyToOne(optional = false)
+	//@JoinColumn(name = "movimentacao_id", insertable = false, updatable = false)
+	@JoinColumn(name= "movimentacao_id", referencedColumnName = "id")
+	private Movimentacao movimentacao;
+	
+	@MapsId("usuarioId")
+	@ManyToOne(optional = false)
+	//@JoinColumn(name = "usuario_id", insertable = false, updatable = false)
+	@JoinColumn(name= "usuario_id", referencedColumnName = "id")
+	private Usuario usuario;
+	
+	private LocalDateTime dataTrabalhada;
+	
+	private BigDecimal quantidadeHorasTrabalhadas;
+	
+	private BigDecimal saldoHorasTrabalhadas;
+	
+	@Getter
+	@Setter
+	@Embeddable
+	@EqualsAndHashCode(onlyExplicitlyIncluded = true)
+	public class BancoHorasId implements Serializable {
+		
+		private static final long serialVersionUID = 1L;
+
+		@EqualsAndHashCode.Include
+		private Long id;
+	
+		@EqualsAndHashCode.Include
+		@Column(name = "movimentacao_id")
+		private Long movimentacaoId;
+		
+		@EqualsAndHashCode.Include
+		@Column(name = "usuario_id")
+		private Long usuarioId;
+		
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.digitalinnovationone.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.model.NivelAcesso;
+import com.digitalinnovationone.domain.repository.NivelAcessoRepository;
+
+@Service
+public class NivelAcessoService {
+
+	@Autowired
+	private NivelAcessoRepository nivelAcessoRepository;
+	
+	@Transactional
+	public NivelAcesso salvar(NivelAcesso nivelAcesso) {
+		return nivelAcessoRepository.save(nivelAcesso);
+	}
+	
+	@Transactional
+	public void excluir(Long nivelAcessoId) {
+		try {
+			nivelAcessoRepository.deleteById(nivelAcessoId);
+			nivelAcessoRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new RuntimeException("Nivel de acesso não encontrado");
+		}
+	}
+	
+	public NivelAcesso buscarOuFalhar(Long nivelAcessoId) {
+		return nivelAcessoRepository.findById(nivelAcessoId)
+				.orElseThrow(() -> new RuntimeException("Nível de acesso não encontrado"));
+	}
+
+}

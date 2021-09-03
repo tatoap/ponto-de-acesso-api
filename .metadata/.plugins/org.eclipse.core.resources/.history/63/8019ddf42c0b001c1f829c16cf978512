@@ -1,0 +1,5 @@
+package com.digitalinnovationone.core.modelmapper;
+
+public class ModelMapperConfig {
+
+}

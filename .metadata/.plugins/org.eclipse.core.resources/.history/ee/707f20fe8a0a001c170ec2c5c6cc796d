@@ -1,0 +1,25 @@
+package com.digitalinnovationone.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.digitalinnovationone.model.Usuario;
+import com.digitalinnovationone.repository.UsuarioRepository;
+
+public class UsuarioService {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Transactional
+	public Usuario salvar(Usuario usuario) {
+		return usuarioRepository.save(usuario);
+	}
+	
+	public Usuario buscarOuFalhar(Long usuarioId) throws Exception {
+		return usuarioRepository.findById(usuarioId)
+				.orElseThrow(() -> new Exception("Usuário não encontrado"));
+	}
+
+}

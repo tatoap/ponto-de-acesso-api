@@ -1,0 +1,30 @@
+package com.digitalinnovationone.api.v1.input;
+
+import java.math.BigDecimal;
+import java.time.LocalTime;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class UsuarioInput {
+
+	private String nome;
+	
+	private CategoriaUsuarioIdInput categoria;
+	
+	private EmpresaIdInput empresa;
+	
+	private NivelAcessoIdInput nivelAcesso;
+	
+	private JornadaTrabalhoIdInput jornadaTrabalho;
+	
+	private BigDecimal toleranciaAtraso;
+	
+	private LocalTime horaInicio;
+	
+	private LocalTime horaSaida;
+	
+	
+}

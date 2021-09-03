@@ -1,0 +1,5 @@
+package com.digitalinnovationone.api.exceptionhandler;
+
+public class ApiExceptionHandler {
+
+}

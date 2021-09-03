@@ -1,0 +1,62 @@
+package com.digitalinnovationone.controller;
+
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.digitalinnovationone.model.CategoriaUsuario;
+import com.digitalinnovationone.repository.CategoriaUsuarioRepository;
+import com.digitalinnovationone.service.CategoriaUsuarioService;
+
+@RestController
+@RequestMapping("/categorias")
+public class CategoriaUsuarioController {
+
+	@Autowired
+	private CategoriaUsuarioRepository categoriaRepository;
+	
+	@Autowired
+	private CategoriaUsuarioService categoriaService;
+	
+	@GetMapping
+	public List<CategoriaUsuario> listar() {
+		return categoriaRepository.findAll();
+	}
+	
+	@GetMapping("/{categoriaId}")
+	public CategoriaUsuario buscar(@PathVariable Long categoriaId) {
+		return categoriaService.buscarOuFalhar(categoriaId);
+	}
+	
+	@PostMapping
+	@ResponseStatus(HttpStatus.CREATED)
+	public CategoriaUsuario adicionar(@RequestBody CategoriaUsuario categoriaUsuario) {
+		return categoriaService.salvar(categoriaUsuario);
+	}
+	
+	@PutMapping("/{categoriaId}")
+	public CategoriaUsuario atualizar(@PathVariable Long categoriaId, @RequestBody CategoriaUsuario categoriaUsuario) {
+		CategoriaUsuario categoriaSalva = categoriaService.buscarOuFalhar(categoriaId);
+		
+		BeanUtils.copyProperties(categoriaUsuario, categoriaSalva, "id");
+		
+		return categoriaService.salvar(categoriaSalva);
+	}
+	
+	@DeleteMapping("/{categoriaId}")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void remover(@PathVariable Long categoriaId) {
+		categoriaService.excluir(categoriaId);
+	}
+}

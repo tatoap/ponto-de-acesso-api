@@ -1,0 +1,38 @@
+package com.digitalinnovationone.domain.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.model.CategoriaUsuario;
+import com.digitalinnovationone.domain.repository.CategoriaUsuarioRepository;
+
+@Service
+public class CategoriaUsuarioService {
+
+	@Autowired
+	private CategoriaUsuarioRepository categoriaUsuarioRepository;
+	
+	@Transactional
+	public CategoriaUsuario salvar(CategoriaUsuario categoriaUsuario) {
+		return categoriaUsuarioRepository.save(categoriaUsuario);
+	}
+	
+	@Transactional
+	public void excluir(Long categoriaId) {
+		try {
+			categoriaUsuarioRepository.deleteById(categoriaId);
+			categoriaUsuarioRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new RuntimeException("Categoria não encontrada");
+		}
+	}
+	
+	public CategoriaUsuario buscarOuFalhar(Long categoriaId) {
+		return categoriaUsuarioRepository.findById(categoriaId)
+				.orElseThrow(() -> new RuntimeException("Categoria não encontrada"));
+	}
+	
+}

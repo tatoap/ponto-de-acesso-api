@@ -1,0 +1,38 @@
+package com.digitalinnovationone.domain.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.model.Empresa;
+import com.digitalinnovationone.domain.repository.EmpresaRepository;
+
+@Service
+public class EmpresaService {
+
+	@Autowired
+	private EmpresaRepository empresaRepository;
+	
+	@Transactional
+	public Empresa salvar(Empresa empresa) {
+		return empresaRepository.save(empresa);
+	}
+	
+	@Transactional
+	public void excluir(Long empresaId) {
+		try {
+			empresaRepository.deleteById(empresaId);
+			empresaRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new RuntimeException("Empresa não encontrada");
+		}
+	}
+	
+	public Empresa buscarOuFalhar(Long empresaId) {
+		return empresaRepository.findById(empresaId)
+				.orElseThrow(() -> new RuntimeException("Empresa não encontrada"));
+	}
+	
+}

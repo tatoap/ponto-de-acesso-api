@@ -1,0 +1,45 @@
+package com.digitalinnovationone.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.model.Cidade;
+import com.digitalinnovationone.model.Estado;
+import com.digitalinnovationone.repository.CidadeRepository;
+
+@Service
+public class CidadeService {
+
+	@Autowired
+	private CidadeRepository cidadeRepository;
+	
+	@Autowired
+	private EstadoService estadoService;
+	
+	@Transactional
+	private Cidade salvar(Cidade cidade) {
+		Estado estado = estadoService.buscarOuFalhar(cidade.getEstado().getId());
+		
+		cidade.setEstado(estado);
+		
+		return cidadeRepository.save(cidade);
+	}
+	
+	@Transactional
+	private void excluir(Long cidadeId) {
+		try {
+			cidadeRepository.deleteById(cidadeId);
+			cidadeRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new RuntimeException("Cidade não encontrado");
+		}
+	}
+	
+	public Cidade buscarOuFalhar(Long cidadeId) {
+		return cidadeRepository.findById(cidadeId)
+				.orElseThrow(() -> new RuntimeException("Cidade não encontrado"));
+	}
+}

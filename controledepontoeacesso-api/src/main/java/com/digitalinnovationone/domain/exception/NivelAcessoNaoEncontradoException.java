@@ -1,0 +1,17 @@
+package com.digitalinnovationone.domain.exception;
+
+public class NivelAcessoNaoEncontradoException extends EntidadeNaoEncontradaException {
+	
+	private static final long serialVersionUID = 1L;
+
+	private static final String MSG_NIVEL_ACESSO_NAO_ENCONTRADO = "Não foi encontrado um cadastro de nível de acesso com o código d%";
+
+	public NivelAcessoNaoEncontradoException(String mensagem) {
+		super(mensagem);
+	}
+	
+	public NivelAcessoNaoEncontradoException(Long nivelAcessoId) {
+		this(String.format(MSG_NIVEL_ACESSO_NAO_ENCONTRADO, nivelAcessoId));
+	}
+
+}

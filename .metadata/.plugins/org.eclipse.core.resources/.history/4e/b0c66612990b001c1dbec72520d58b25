@@ -1,0 +1,12 @@
+package com.digitalinnovationone.v1.input;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class EmpresaIdInput {
+
+	private Long id;
+	
+}

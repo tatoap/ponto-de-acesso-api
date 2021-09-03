@@ -1,0 +1,19 @@
+package com.digitalinnovationone.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.model.JornadaTrabalho;
+import com.digitalinnovationone.repository.JornadaTrabalhoRepository;
+
+@Service
+public class JornadaTrabalhoService {
+
+	@Autowired
+	private JornadaTrabalhoRepository jornadaTrabalhoRepository;
+	
+	public JornadaTrabalho buscarOuFalhar(Long jornadaTrabalhoId) {
+		return jornadaTrabalhoRepository.findById(jornadaTrabalhoId)
+				.orElseThrow(() -> new RuntimeException("Jornada de trabalho não encontrada"));
+	}
+}

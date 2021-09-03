@@ -1,0 +1,18 @@
+package com.digitalinnovationone.v1.input;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class EmpresaInput {
+
+	private String descricao;
+	
+	private String cnpj;
+	
+	private String telefone;
+	
+	private EnderecoInput endereco;
+	
+}

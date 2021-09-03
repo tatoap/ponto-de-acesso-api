@@ -1,0 +1,8 @@
+package com.digitalinnovationone.v1.assembler;
+
+@Component
+public class CidadeModelAssembler {
+
+	
+	
+}

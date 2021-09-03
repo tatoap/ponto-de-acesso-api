@@ -1,0 +1,67 @@
+package com.digitalinnovationone.service;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.model.CategoriaUsuario;
+import com.digitalinnovationone.model.Empresa;
+import com.digitalinnovationone.model.JornadaTrabalho;
+import com.digitalinnovationone.model.NivelAcesso;
+import com.digitalinnovationone.model.Usuario;
+import com.digitalinnovationone.repository.UsuarioRepository;
+
+@Service
+public class UsuarioService {
+	
+	@Autowired
+	private UsuarioRepository usuarioRepository;
+	
+	@Autowired
+	private CategoriaUsuarioService categoriaUsuarioService;
+	
+	@Autowired
+	private EmpresaService empresaService;
+	
+	@Autowired
+	private NivelAcessoService nivelAcessoService;
+	
+	@Autowired
+	private JornadaTrabalhoService jornadaTrabalhoService;
+	
+	@Transactional
+	public Usuario salvar(Usuario usuario) {
+		CategoriaUsuario categoria = categoriaUsuarioService.buscarOuFalhar(usuario.getCategoria().getId());
+		
+		Empresa empresa = empresaService.buscarOuFalhar(usuario.getEmpresa().getId());
+		
+		NivelAcesso nivelAcesso = nivelAcessoService.buscarOuFalhar(usuario.getNivelAcesso().getId());
+		
+		JornadaTrabalho jornadaTrabalho = jornadaTrabalhoService.buscarOuFalhar(usuario.getJornadaTrabalho().getId());
+		
+		usuario.setCategoria(categoria);
+		usuario.setEmpresa(empresa);
+		usuario.setNivelAcesso(nivelAcesso);
+		usuario.setJornadaTrabalho(jornadaTrabalho);
+		
+		return usuarioRepository.save(usuario);
+	}
+	
+	@Transactional
+	public void excluir(Long usuarioId) {
+		try {
+			usuarioRepository.deleteById(usuarioId);
+			usuarioRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new RuntimeException("Usuário não encontrado");
+		}
+	}
+	
+	public Usuario buscarOuFalhar(Long usuarioId) {
+		return usuarioRepository.findById(usuarioId)
+				.orElseThrow(() -> new RuntimeException("Usuário não encontrado"));
+	}
+
+}

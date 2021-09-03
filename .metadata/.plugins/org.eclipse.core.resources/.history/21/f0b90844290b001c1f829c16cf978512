@@ -1,0 +1,9 @@
+package com.digitalinnovationone.v1.input;
+
+@Getter
+@Setter
+public class EstadoInput {
+	
+	private String nome;
+
+}

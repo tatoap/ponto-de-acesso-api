@@ -1,0 +1,5 @@
+package com.digitalinnovationone.domain.exception;
+
+public class UsuarioNaoEncontradoException {
+
+}

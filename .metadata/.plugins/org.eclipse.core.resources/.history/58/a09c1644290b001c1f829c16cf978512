@@ -1,0 +1,5 @@
+package com.digitalinnovationone.v1.model;
+
+public class EstadoModel {
+
+}
