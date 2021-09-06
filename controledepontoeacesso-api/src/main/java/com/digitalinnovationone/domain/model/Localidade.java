@@ -29,6 +29,7 @@ public class Localidade {
 	@JoinColumn(name = "nivel_acesso_id")
 	private NivelAcesso nivelAcesso;
 	
+	@Column(nullable = false)
 	private String descricao;
 	
 	@Getter

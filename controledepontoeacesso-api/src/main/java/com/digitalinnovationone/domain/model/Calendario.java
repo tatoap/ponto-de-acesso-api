@@ -2,6 +2,7 @@ package com.digitalinnovationone.domain.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -22,7 +23,9 @@ public class Calendario extends EntidadeBaseLong {
 	@JoinColumn(name = "tipo_data_id")
 	private TipoData tipo;
 	
+	@Column(nullable = false)
 	private String descricao;
 	
+	@Column(nullable = false)
 	private LocalDateTime data;
 }

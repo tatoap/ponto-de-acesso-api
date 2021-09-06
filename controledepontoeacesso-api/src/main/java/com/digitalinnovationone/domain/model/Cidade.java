@@ -1,5 +1,6 @@
 package com.digitalinnovationone.domain.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -16,6 +17,7 @@ import lombok.Setter;
 @Table(name = "cidade")
 public class Cidade extends EntidadeBaseLong {
 
+	@Column(nullable = false)
 	private String nome;
 	
 	@ManyToOne(optional = false)

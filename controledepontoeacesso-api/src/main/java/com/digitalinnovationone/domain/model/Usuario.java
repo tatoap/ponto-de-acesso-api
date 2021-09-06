@@ -3,6 +3,7 @@ package com.digitalinnovationone.domain.model;
 import java.math.BigDecimal;
 import java.time.LocalTime;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -19,6 +20,7 @@ import lombok.Setter;
 @Table(name = "usuario")
 public class Usuario extends EntidadeBaseLong {
 
+	@Column(nullable = false)
 	private String nome;
 	
 	@ManyToOne(optional = false)
@@ -37,10 +39,13 @@ public class Usuario extends EntidadeBaseLong {
 	@JoinColumn(name = "jornada_trabalho_id")
 	private JornadaTrabalho jornadaTrabalho;
 	
+	@Column(nullable = false)
 	private BigDecimal toleranciaAtraso;
 	
+	@Column(nullable = false)
 	private LocalTime horaInicio;
 	
+	@Column(nullable = false)
 	private LocalTime horaSaida;
 	
 }

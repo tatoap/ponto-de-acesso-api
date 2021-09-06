@@ -5937,3 +5937,1782 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY Activator 1 0 2021-09-02 22:33:53.152
 !MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:49:48.441
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mjsYIvyD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:49:48.442
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.mjsYIvyD
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:49:48.443
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-02 22:49:48.444
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.mjsYIvyD => OK
+!SESSION 2021-09-03 09:11:54.557 -----------------------------------------------
+eclipse.buildId=4.11.0.202106180608
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-09-03 09:12:11.629
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-03 09:12:11.629
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31028e45,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@68f75a35,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:25.284
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:25.289
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@473f884d[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1523)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:25.346
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:25.594
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-09-03 09:12:28.279
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-03 09:12:28.481
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Renato Ramos'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.654
+!MESSAGE Boot LS startup time from start to initialized: 17263ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.841
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rGKsCfKsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.848
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.862
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.865
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.867
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rGKsCfKs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.870
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.897
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.909
+!MESSAGE buffering callback sts4.classpath.rGKsCfKs controledepontoeacesso-api false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:42.911
+!MESSAGE executing callback sts4.classpath.rGKsCfKs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 09:12:43.776
+!MESSAGE executing callback sts4.classpath.rGKsCfKs SUCCESS [done]
+
+!ENTRY Activator 1 0 2021-09-03 09:25:43.212
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 09:35:38.070
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 09:35:38.799
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 09:36:45.681
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 09:36:56.110
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 09:37:02.577
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.jface 2 0 2021-09-03 10:31:37.135
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-03 10:31:37.135
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7a3930e0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78713f36,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY Activator 1 0 2021-09-03 10:31:52.669
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 10:32:18.500
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 10:37:29.388
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 10:44:41.757
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 10:44:50.829
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:03:13.607
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:14:05.207
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:14:31.244
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:18:56.578
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:19:13.489
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:25:35.895
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:27:15.223
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:27:24.328
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:29:05.251
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:29:59.235
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 11:55:48.096
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:07:24.510
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:07:34.907
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:29:39.729
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.ui 2 2 2021-09-03 12:30:27.002
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-09-03 12:30:37.818
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:30:54.721
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:37:05.647
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:37:36.043
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:38:28.097
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:39:05.820
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:39:14.759
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 12:44:56.955
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:21:04.881
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:21:34.703
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:23:46.398
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:23:56.301
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:26:46.052
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:26:55.391
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:28:31.458
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:28:39.716
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:42:28.357
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 14:42:41.587
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 15:09:37.761
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 15:09:37.938
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 15:12:57.386
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 15:13:17.386
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-03 15:13:28.051
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 17:59:35.422
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rGKsCfKs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 17:59:35.423
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.rGKsCfKs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 17:59:35.425
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-03 17:59:35.426
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.rGKsCfKs => OK
+
+!ENTRY org.eclipse.ui 4 0 2021-09-03 17:59:36.147
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.ui.launch.LaunchList.getLast()" because "this.launches" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.update(AbstractLaunchToolbarPulldown.java:112)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.access$4(AbstractLaunchToolbarPulldown.java:110)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown$3.run(AbstractLaunchToolbarPulldown.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4001)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3629)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:468)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:228)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:560)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.run(IDEWorkbenchAdvisor.java:367)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:388)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2942)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1124)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1392)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1392)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1368)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1716)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1743)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1743)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1752)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:503)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:578)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1067)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1052)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1552)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4762)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4861)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1480)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2263)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4930)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3624)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:654)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1462)
+!SESSION 2021-09-05 11:08:53.799 -----------------------------------------------
+eclipse.buildId=4.11.0.202106180608
+java.version=15.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2021-09-05 11:09:11.484
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-05 11:09:11.484
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@75fa9254,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f25ed2b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:22.703
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:22.705
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@18807f5[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=1523)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:22.720
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:22.794
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-09-05 11:09:26.348
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-09-05 11:09:26.575
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Renato Ramos'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.577
+!MESSAGE Boot LS startup time from start to initialized: 16843ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.922
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dUTGnpqAisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.938
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.959
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.961
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.963
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.dUTGnpqA => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:39.967
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:40.084
+!MESSAGE classpath=97 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:40.099
+!MESSAGE buffering callback sts4.classpath.dUTGnpqA controledepontoeacesso-api false 97
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:40.101
+!MESSAGE executing callback sts4.classpath.dUTGnpqA 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 11:09:41.547
+!MESSAGE executing callback sts4.classpath.dUTGnpqA SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-09-05 11:12:34.388
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.jface 2 0 2021-09-05 11:12:37.722
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-09-05 11:12:37.722
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@48dad22b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@144ad1f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY Activator 1 0 2021-09-05 11:13:33.548
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:13:33.840
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:15:11.883
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:15:26.466
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:32:52.597
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:33:12.116
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:35:09.196
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 11:40:11.182
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 11:41:52.331
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:41:52.986
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:42:26.299
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:44:44.687
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 11:45:19.024
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:00:27.699
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:00:28.349
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:05:26.149
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:05:26.953
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:10:21.647
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:10:22.403
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:10:43.355
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:12:36.170
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:12:41.589
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:27:19.463
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:28:01.730
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 12:28:29.922
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 12:29:29.248
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:29:29.896
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:29:36.221
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:31:37.174
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:31:43.595
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:34:01.671
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:34:07.300
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:48:08.422
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:48:10.143
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:48:15.316
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:52:01.443
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:52:02.114
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:52:10.545
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:52:31.164
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:55:23.241
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 12:55:32.827
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:00:37.868
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 13:00:39.591
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 13:00:41.575
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:00:46.956
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:00:55.186
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:01:31.415
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:01:36.726
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:04:36.777
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:10:06.629
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:10:07.393
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:10:16.795
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:17:31.702
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:18:02.094
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:20:45.470
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:21:03.596
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:33:44.587
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:33:52.493
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:36:39.935
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 13:36:47.527
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 15:48:20.031
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 16:04:41.837
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:04:45.331
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:05:12.197
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:10:06.655
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:10:13.830
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:13:55.972
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:14:20.451
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:14:30.908
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:21:11.653
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:21:49.983
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:27:19.336
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:27:30.116
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:32:50.753
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:33:48.897
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:42:37.479
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:43:46.201
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:47:00.863
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:47:08.644
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:58:45.116
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 16:58:55.356
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:02:08.314
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:02:35.149
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:11:20.039
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:11:28.534
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 17:14:28.314
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 17:14:31.994
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:14:40.781
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:22:59.909
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:23:16.703
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:23:33.738
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:23:48.437
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:44:48.874
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:44:56.836
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:48:24.547
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:48:35.652
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:48:48.141
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:52:13.596
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:52:29.728
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:54:33.022
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:54:47.033
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:56:38.524
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:56:59.664
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:57:08.717
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:57:09.387
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:57:17.837
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:57:23.002
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:58:40.615
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 17:59:10.224
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:06:23.433
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:08:10.421
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:08:18.867
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:12:52.376
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:13:36.179
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:30:19.353
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:30:28.848
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:32:55.899
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:33:05.773
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:41:01.621
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:51:18.840
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:51:19.591
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:52:04.689
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:53:03.139
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:53:11.484
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:56:28.292
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 18:56:36.733
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:02:54.600
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:03:09.739
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-09-05 19:11:04.274
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package com.digitalinnovationone.domain.service;
+
+import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.exception.EmpresaCnpjJaInclusoException;
+import com.digitalinnovationone.domain.exception.EmpresaNaoEncontradaException;
+import com.digitalinnovationone.domain.exception.EntidadeEmUsoException;
+import com.digitalinnovationone.domain.model.Empresa;
+import com.digitalinnovationone.domain.repository.EmpresaRepository;
+
+@Service
+public class EmpresaService {
+	
+	private static final String MSG_EMPRESA_EM_USO = "Empresa de código %d não pode ser removida, pois esta em uso";
+
+	@Autowired
+	private EmpresaRepository empresaRepository;
+	
+	@Transactional
+	public Empresa salvar(Empresa empresa) {
+		System.out.println("IF 2 - " + empresa.getCnpj());
+		
+		//Empresa empresaVerificacao = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		//System.out.println("IF 3 - " + empresaVerificacao.getCnpj());
+		
+		/*if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("TESTE = " + empresa);
+		}
+		
+		if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("passei aqui");
+			throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+		}*/
+		
+		return empresaRepository.save(empresa);
+	}
+	
+	public void atualizar()
+	
+	@Transactional
+	public void excluir(Long empresaId) {
+		try {
+			empresaRepository.deleteById(empresaId);
+			empresaRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new EmpresaNaoEncontradaException(empresaId);
+		} catch (DataIntegrityViolationException e) {
+			throw new EntidadeEmUsoException(String.format(MSG_EMPRESA_EM_USO, empresaId));
+		} 
+	}
+	
+	public Empresa buscarOuFalhar(Long empresaId) {
+		return empresaRepository.findById(empresaId)
+				.orElseThrow(() -> new EmpresaNaoEncontradaException(empresaId));
+	}
+	
+	public boolean buscarPorCnpj(String cnpj, Long... empresaId) {
+		Empresa empresaSalva = empresaRepository.findByCnpj(cnpj);
+		
+		if (empresaSalva != null) {
+			System.out.println("IF ID - " + empresaSalva.getId() + " - " + empresaId);
+			if (!empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				//throw new EmpresaCnpjJaInclusoException(cnpj);
+				return true;
+			}
+		}
+		return false;
+		
+		/*Empresa empresaSalva = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println("CNPJ = " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println(empresaSalva.getId() + " - " + empresaId);
+		
+		if (empresaSalva != null)
+			System.out.println(empresa.getCnpj() + " - " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null) {
+			if (empresaRepository.findByCnpj(empresa.getCnpj()) != null && !empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+			}
+		}*/
+	}
+	
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar();
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2021-09-05 19:11:04.279
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar();
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-09-05 19:11:04.280
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar();
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-09-05 19:11:21.323
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package com.digitalinnovationone.domain.service;
+
+import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.exception.EmpresaCnpjJaInclusoException;
+import com.digitalinnovationone.domain.exception.EmpresaNaoEncontradaException;
+import com.digitalinnovationone.domain.exception.EntidadeEmUsoException;
+import com.digitalinnovationone.domain.model.Empresa;
+import com.digitalinnovationone.domain.repository.EmpresaRepository;
+
+@Service
+public class EmpresaService {
+	
+	private static final String MSG_EMPRESA_EM_USO = "Empresa de código %d não pode ser removida, pois esta em uso";
+
+	@Autowired
+	private EmpresaRepository empresaRepository;
+	
+	@Transactional
+	public Empresa salvar(Empresa empresa) {
+		System.out.println("IF 2 - " + empresa.getCnpj());
+		
+		//Empresa empresaVerificacao = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		//System.out.println("IF 3 - " + empresaVerificacao.getCnpj());
+		
+		/*if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("TESTE = " + empresa);
+		}
+		
+		if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("passei aqui");
+			throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+		}*/
+		
+		return empresaRepository.save(empresa);
+	}
+	
+	public void atualizar(String cnpj, Long... empresaId)
+	
+	@Transactional
+	public void excluir(Long empresaId) {
+		try {
+			empresaRepository.deleteById(empresaId);
+			empresaRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new EmpresaNaoEncontradaException(empresaId);
+		} catch (DataIntegrityViolationException e) {
+			throw new EntidadeEmUsoException(String.format(MSG_EMPRESA_EM_USO, empresaId));
+		} 
+	}
+	
+	public Empresa buscarOuFalhar(Long empresaId) {
+		return empresaRepository.findById(empresaId)
+				.orElseThrow(() -> new EmpresaNaoEncontradaException(empresaId));
+	}
+	
+	public boolean buscarPorCnpj(String cnpj, Long... empresaId) {
+		Empresa empresaSalva = empresaRepository.findByCnpj(cnpj);
+		
+		if (empresaSalva != null) {
+			System.out.println("IF ID - " + empresaSalva.getId() + " - " + empresaId);
+			if (!empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				//throw new EmpresaCnpjJaInclusoException(cnpj);
+				return true;
+			}
+		}
+		return false;
+		
+		/*Empresa empresaSalva = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println("CNPJ = " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println(empresaSalva.getId() + " - " + empresaId);
+		
+		if (empresaSalva != null)
+			System.out.println(empresa.getCnpj() + " - " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null) {
+			if (empresaRepository.findByCnpj(empresa.getCnpj()) != null && !empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+			}
+		}*/
+	}
+	
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long... empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2021-09-05 19:11:21.324
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long... empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-09-05 19:11:21.325
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long... empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-09-05 19:11:23.855
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package com.digitalinnovationone.domain.service;
+
+import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.exception.EmpresaCnpjJaInclusoException;
+import com.digitalinnovationone.domain.exception.EmpresaNaoEncontradaException;
+import com.digitalinnovationone.domain.exception.EntidadeEmUsoException;
+import com.digitalinnovationone.domain.model.Empresa;
+import com.digitalinnovationone.domain.repository.EmpresaRepository;
+
+@Service
+public class EmpresaService {
+	
+	private static final String MSG_EMPRESA_EM_USO = "Empresa de código %d não pode ser removida, pois esta em uso";
+
+	@Autowired
+	private EmpresaRepository empresaRepository;
+	
+	@Transactional
+	public Empresa salvar(Empresa empresa) {
+		System.out.println("IF 2 - " + empresa.getCnpj());
+		
+		//Empresa empresaVerificacao = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		//System.out.println("IF 3 - " + empresaVerificacao.getCnpj());
+		
+		/*if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("TESTE = " + empresa);
+		}
+		
+		if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("passei aqui");
+			throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+		}*/
+		
+		return empresaRepository.save(empresa);
+	}
+	
+	public void atualizar(String cnpj, Long empresaId)
+	
+	@Transactional
+	public void excluir(Long empresaId) {
+		try {
+			empresaRepository.deleteById(empresaId);
+			empresaRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new EmpresaNaoEncontradaException(empresaId);
+		} catch (DataIntegrityViolationException e) {
+			throw new EntidadeEmUsoException(String.format(MSG_EMPRESA_EM_USO, empresaId));
+		} 
+	}
+	
+	public Empresa buscarOuFalhar(Long empresaId) {
+		return empresaRepository.findById(empresaId)
+				.orElseThrow(() -> new EmpresaNaoEncontradaException(empresaId));
+	}
+	
+	public boolean buscarPorCnpj(String cnpj, Long... empresaId) {
+		Empresa empresaSalva = empresaRepository.findByCnpj(cnpj);
+		
+		if (empresaSalva != null) {
+			System.out.println("IF ID - " + empresaSalva.getId() + " - " + empresaId);
+			if (!empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				//throw new EmpresaCnpjJaInclusoException(cnpj);
+				return true;
+			}
+		}
+		return false;
+		
+		/*Empresa empresaSalva = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println("CNPJ = " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println(empresaSalva.getId() + " - " + empresaId);
+		
+		if (empresaSalva != null)
+			System.out.println(empresa.getCnpj() + " - " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null) {
+			if (empresaRepository.findByCnpj(empresa.getCnpj()) != null && !empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+			}
+		}*/
+	}
+	
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2021-09-05 19:11:23.856
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2021-09-05 19:11:23.857
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException: startPos = 1564 and length is -6.
+This breaks the rule that lengths are not allowed to be negative. Affected Node:
+class org.eclipse.jdt.core.dom.MethodDeclaration: public void atualizar(String cnpj,Long empresaId);
+
+	at lombok.eclipse.agent.PatchDiagnostics.setSourceRangeCheck(PatchDiagnostics.java:36)
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:725)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3347)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1524)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:494)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:201)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1142)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:173)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:94)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:740)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:806)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1319)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:131)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:113)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:93)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:157)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:76)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:210)
+
+!ENTRY Activator 1 0 2021-09-05 19:19:26.082
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:19:47.115
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:48:06.195
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:48:06.886
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:48:17.704
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:50:28.595
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:50:35.896
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:59:45.799
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 19:59:46.485
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:00:02.024
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:01:42.200
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:02:03.614
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:07:37.220
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:07:44.808
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:09:59.655
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:10:09.756
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:10:56.261
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:11:31.374
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 20:46:59.719
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 20:49:23.497
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:49:24.175
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:49:33.542
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:51:55.967
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:52:15.387
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:52:27.101
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:52:51.705
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:52:59.285
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:57:36.555
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:57:37.230
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:57:44.116
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 20:59:55.709
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:00:04.560
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:01:07.089
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:01:18.036
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:01:27.281
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:04:18.861
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:04:28.955
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:07:50.183
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:08:00.020
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:11:40.684
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:11:50.086
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:13:17.900
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:13:34.544
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:28:51.571
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:28:59.624
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:32:06.633
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:32:17.009
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:38:21.824
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:38:22.517
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:38:34.146
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 21:46:25.485
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 21:50:41.045
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:50:41.731
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:51:41.566
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:53:27.373
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:53:37.776
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:56:48.779
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:56:49.466
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:57:53.048
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 21:58:04.985
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:00:28.896
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:00:41.743
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.eclipse.lsp4e 2 0 2021-09-05 22:03:55.002
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2086)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY Activator 1 0 2021-09-05 22:04:30.930
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:04:40.194
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:10:30.687
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:10:31.371
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:10:43.164
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:13:57.559
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:13:58.252
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:14:28.544
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:16:43.918
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:16:59.369
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:17:12.765
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:24:05.576
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:32:13.898
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:32:14.566
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:32:31.727
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:35:57.427
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:35:57.551
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY Activator 1 0 2021-09-05 22:36:06.009
+!MESSAGE Has main method computation for project 'controledepontoeacesso-api'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 22:37:27.356
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dUTGnpqA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 22:37:27.357
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.dUTGnpqA
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 22:37:27.358
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-05 22:37:27.359
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.dUTGnpqA => OK

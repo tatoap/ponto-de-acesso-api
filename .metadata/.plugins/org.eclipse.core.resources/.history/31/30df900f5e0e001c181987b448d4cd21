@@ -1,0 +1,7 @@
+package com.digitalinnovationone.domain.repository;
+
+public interface EmpresaRepositoryQueries {
+
+	Boolean find(String cnpj);
+	
+}

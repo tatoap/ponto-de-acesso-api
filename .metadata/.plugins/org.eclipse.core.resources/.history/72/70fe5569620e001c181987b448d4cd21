@@ -1,0 +1,17 @@
+package com.digitalinnovationone.domain.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.stereotype.Repository;
+
+import com.digitalinnovationone.domain.model.Empresa;
+
+@Repository
+public interface EmpresaRepository extends JpaRepository<Empresa, Long>, EmpresaRepositoryQueries {
+	
+	//@Query("from empresa where cnpj like %:cnpj%")
+	Empresa findByCnpj(@Param("cnpj") String cnpj);
+
+}

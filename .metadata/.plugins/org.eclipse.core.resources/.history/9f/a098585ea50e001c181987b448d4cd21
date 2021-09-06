@@ -1,0 +1,121 @@
+package com.digitalinnovationone.domain.service;
+
+import java.util.Optional;
+
+import javax.transaction.Transactional;
+import javax.validation.ConstraintViolationException;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.stereotype.Service;
+
+import com.digitalinnovationone.domain.exception.EmpresaCnpjJaInclusoException;
+import com.digitalinnovationone.domain.exception.EmpresaNaoEncontradaException;
+import com.digitalinnovationone.domain.exception.EntidadeEmUsoException;
+import com.digitalinnovationone.domain.model.Empresa;
+import com.digitalinnovationone.domain.repository.EmpresaRepository;
+
+@Service
+public class EmpresaService {
+	
+	private static final String MSG_EMPRESA_EM_USO = "Empresa de código %d não pode ser removida, pois esta em uso";
+
+	@Autowired
+	private EmpresaRepository empresaRepository;
+	
+	@Transactional
+	public Empresa salvar(Empresa empresa) {
+		System.out.println("IF 2 - " + empresa.getCnpj());
+		
+		//Empresa empresaVerificacao = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		//System.out.println("IF 3 - " + empresaVerificacao.getCnpj());
+		
+		/*if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("TESTE = " + empresa);
+		}
+		
+		if (buscarPorCnpj(empresa.getCnpj())) {
+			System.out.println("passei aqui");
+			throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+		}*/
+		
+		return empresaRepository.save(empresa);
+	}
+	
+	/*public void atualizar(Empresa empresa, Long empresaId) {
+		if (!buscarPorCnpj(empresa.getCnpj(), empresaId)) {
+			salvar(empresa);
+		} else {
+			throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+		}
+	}*/
+	
+	@Transactional
+	public void excluir(Long empresaId) {
+		try {
+			empresaRepository.deleteById(empresaId);
+			empresaRepository.flush();
+		} catch (EmptyResultDataAccessException e) {
+			throw new EmpresaNaoEncontradaException(empresaId);
+		} catch (DataIntegrityViolationException e) {
+			throw new EntidadeEmUsoException(String.format(MSG_EMPRESA_EM_USO, empresaId));
+		} 
+	}
+	
+	public Empresa buscarOuFalhar(Long empresaId) {
+		return empresaRepository.findById(empresaId)
+				.orElseThrow(() -> new EmpresaNaoEncontradaException(empresaId));
+	}
+	
+	public boolean buscarPorCnpj(String cnpj, Long... empresaId) {
+		Optional<Empresa> empresaSalva = Optional.ofNullable(empresaRepository.findByCnpj(cnpj));
+		
+		System.out.println("BUSCAR " + empresaId);
+		
+		if (empresaSalva.isPresent()) {
+			System.out.println("TESTE EQUALS 1");
+			if (empresaSalva.get().getId().equals(empresaId)) {
+				System.out.println("TESTE EQUALS 2");
+				return false;
+			}
+			return true;
+		}
+		return true;
+		//if (empresaSalva.equals(empresa)) {
+		//	System.out.println("TESTE EQUALS 2");
+		//}
+		
+		/*System.out.println("ID EMPRESA " + empresaId);
+		
+		if (empresaSalva != null && empresaId != null) {
+			System.out.println("IF ID - " + empresaSalva.getId() + " - " + empresaId);
+			if (!empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				//throw new EmpresaCnpjJaInclusoException(cnpj);
+				return true;
+			}
+		}*/
+		//return false;
+		
+		/*Empresa empresaSalva = empresaRepository.findByCnpj(empresa.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println("CNPJ = " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null)
+			System.out.println(empresaSalva.getId() + " - " + empresaId);
+		
+		if (empresaSalva != null)
+			System.out.println(empresa.getCnpj() + " - " + empresaSalva.getCnpj());
+		
+		if (empresaSalva != null) {
+			if (empresaRepository.findByCnpj(empresa.getCnpj()) != null && !empresaSalva.getId().equals(empresaId)) {
+				System.out.println("IF - " + empresaSalva.getId() + " - " + empresaId);
+				throw new EmpresaCnpjJaInclusoException(empresa.getCnpj());
+			}
+		}*/
+	}
+	
+}

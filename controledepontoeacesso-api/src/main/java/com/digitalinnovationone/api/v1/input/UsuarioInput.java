@@ -6,6 +6,8 @@ import java.time.LocalTime;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
+import javax.validation.constraints.Size;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,6 +16,7 @@ import lombok.Setter;
 @Setter
 public class UsuarioInput {
 
+	@Size(max = 50)
 	@NotBlank
 	private String nome;
 	
@@ -34,6 +37,7 @@ public class UsuarioInput {
 	private JornadaTrabalhoIdInput jornadaTrabalho;
 	
 	@NotNull
+	@PositiveOrZero
 	private BigDecimal toleranciaAtraso;
 	
 	@NotNull

@@ -23,10 +23,13 @@ public class BancoHoras {
 	@EmbeddedId
 	private BancoHorasId id;
 	
+	@Column(nullable = false)
 	private LocalDateTime dataTrabalhada;
 	
+	@Column(nullable = false)
 	private BigDecimal quantidadeHorasTrabalhadas;
 	
+	@Column(nullable = false)
 	private BigDecimal saldoHorasTrabalhadas;
 	
 	@Getter

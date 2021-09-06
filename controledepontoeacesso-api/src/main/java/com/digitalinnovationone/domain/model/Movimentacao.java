@@ -25,6 +25,7 @@ public class Movimentacao {
 	@EmbeddedId
 	private MovimentacaoId id;
 	
+	@Column(nullable = false)
 	private LocalDateTime dataEntrada;
 	
 	private LocalDateTime dataSaida;

@@ -1,0 +1,48 @@
+NotBlank={0} é obrigatório
+NotNull={0} é obrigatório
+PositiveOrZero={0} deve ser um valor maior ou igual a zero
+CNPJ={0} deve ser um número de CNPJ válido
+typeMismatch.java.time.OffsetDateTime={0} deve ser uma data/hora válido
+typeMismatch.java.lang.Long={0} deve ser um número válido
+
+#Estado
+estadoInput.id=Código do estado
+estadoInput.nome=Nome do estado
+
+#Cidade
+cidadeInput.id=Código da cidade
+cidadeInput.nome=Nome da cidade
+cidade.estado.id=Código do estado
+
+#CategoriaUsuario
+categoriaUsuarioInput.id=Código da categoria do usuário
+categoriaUsuarioInput.descricao=Descrição da categoria do usuário
+
+#NivelAcesso
+nivelAcesso.id=Código do nível de acesso
+nivelAcesso.descricao=Descrição do nível de acesso
+
+#Empresa
+empresaInput.id=Código da empresa
+empresaInput.descricao=Descrição da empresa
+empresaInput.cnpj=CNPJ da empresa
+empresaInput.telefone=Telefone da empresa
+
+#Endereco
+endereco=Endereço
+endereco.logradouro=Logradouro
+endereco.numero=Número do logradouro
+endereco.cidade=Cidade
+endereco.cidade.id=Código da cidade
+endereco.cep=CEP
+endereco.bairro=Bairro
+
+#Usuario
+usuarioInput.nome=Nome do usuário
+usuarioInput.categoria.id=Código da categoria do usuário
+usuarioInput.empresa.id=Código da empresa
+usuarioInput.nivelAcesso.id=Código do nível de acesso
+usuarioInput.jornadaTrabalho.id=Código da jornada de trabalho
+usuarioInput.toleranciaAtraso=Tolerância de atraso
+usuarioInput.horaInicio=Horário de entrada
+usuarioInput.horaSaida=Horário de saída

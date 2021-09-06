@@ -1,5 +1,6 @@
 package com.digitalinnovationone.domain.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -14,8 +15,10 @@ import lombok.Setter;
 @Table(name = "ocorrencia")
 public class Ocorrencia extends EntidadeBaseLong {
 	
+	@Column(nullable = false)
 	private String nome;
 	
+	@Column(nullable = false)
 	private String descricao;
 
 }

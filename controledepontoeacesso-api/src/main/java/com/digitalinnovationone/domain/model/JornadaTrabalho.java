@@ -1,5 +1,6 @@
 package com.digitalinnovationone.domain.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -14,6 +15,7 @@ import lombok.Setter;
 @Table(name = "jornada_trabalho")
 public class JornadaTrabalho extends EntidadeBaseLong {
 
+	@Column(nullable = false)
 	private String descricao;
 	
 }

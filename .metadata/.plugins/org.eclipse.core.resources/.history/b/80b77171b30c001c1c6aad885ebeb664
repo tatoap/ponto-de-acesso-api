@@ -1,0 +1,27 @@
+package com.digitalinnovationone.domain.model;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.digitalinnovationone.domain.model.id.EntidadeBaseLong;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "empresa")
+public class Empresa extends EntidadeBaseLong {
+
+	private String descricao;
+	
+	private String cnpj;
+	
+	private String telefone;
+	
+	@Embedded
+	private Endereco endereco;
+	
+}

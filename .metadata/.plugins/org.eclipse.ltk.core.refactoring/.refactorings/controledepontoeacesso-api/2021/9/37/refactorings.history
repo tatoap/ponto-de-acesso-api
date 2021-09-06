@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract constant &apos;MSG_CNPJ_JA_INCLUSO&apos; from expression &apos;&quot;CNPJ &apos;%s&apos; já salvo no sistema&quot;&apos;&#x0D;&#x0A;- Original project: &apos;controledepontoeacesso-api&apos;&#x0D;&#x0A;- Constant name: &apos;MSG_CNPJ_JA_INCLUSO&apos;&#x0D;&#x0A;- Constant expression: &apos;&quot;CNPJ &apos;%s&apos; já salvo no sistema&quot;&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;&#x0D;&#x0A;- Replace occurrences of expression with constant" description="Extract constant &apos;MSG_CNPJ_JA_INCLUSO&apos;" flags="786432" id="org.eclipse.jdt.ui.extract.constant" input="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.digitalinnovationone.domain.exception{EmpresaCnpjJaInclusoException.java" name="MSG_CNPJ_JA_INCLUSO" qualify="false" replace="true" selection="267 31" stamp="1630852903003" version="1.0" visibility="2"/>
+</session>

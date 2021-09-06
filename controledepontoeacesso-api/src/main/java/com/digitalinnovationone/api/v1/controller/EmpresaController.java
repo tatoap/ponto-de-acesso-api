@@ -52,8 +52,10 @@ public class EmpresaController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public EmpresaModel adicionar(@Valid @RequestBody EmpresaInput empresaInput) {
+	public EmpresaModel adicionar(@Valid @RequestBody EmpresaInput empresaInput) {		
 		Empresa empresa = empresaInputDisassembler.toDomainModel(empresaInput);
+		
+		empresaService.buscarPorCnpj(empresaInput.getCnpj(), null);
 		
 		return empresaModelAssembler.toModel(empresaService.salvar(empresa));
 	}
@@ -61,9 +63,11 @@ public class EmpresaController {
 	@PutMapping("/{empresaId}")
 	public EmpresaModel atualizar(@PathVariable Long empresaId, @Valid @RequestBody EmpresaInput empresaInput) {
 		Empresa empresaSalva = empresaService.buscarOuFalhar(empresaId);
-		
+								
+		empresaService.buscarPorCnpj(empresaInput.getCnpj(), empresaId);
+			
 		empresaInputDisassembler.copyToDomainModel(empresaInput, empresaSalva);
-		
+			
 		return empresaModelAssembler.toModel(empresaService.salvar(empresaSalva));
 	}
 	

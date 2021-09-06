@@ -69,7 +69,7 @@ create table cidade (
 create table empresa (
 	id bigint not null auto_increment,
 	descricao varchar(30) not null,
-	cnpj varchar(18) not null,
+	cnpj varchar(18) not null unique,
 	telefone varchar(12) not null,
 	endereco_logradouro varchar(80) not null,
 	endereco_complemento varchar(80),

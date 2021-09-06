@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.flywaydb.core.internal.util.ExceptionUtils;
+import org.springframework.beans.TypeMismatchException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -15,10 +16,12 @@ import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
+import org.springframework.web.HttpMediaTypeNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.NoHandlerFoundException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
@@ -26,6 +29,7 @@ import com.digitalinnovationone.domain.exception.EntidadeEmUsoException;
 import com.digitalinnovationone.domain.exception.EntidadeNaoEncontradaException;
 import com.digitalinnovationone.domain.exception.NegocioException;
 import com.fasterxml.jackson.databind.JsonMappingException.Reference;
+import com.fasterxml.jackson.databind.exc.InvalidFormatException;
 import com.fasterxml.jackson.databind.exc.PropertyBindingException;
 
 import lombok.extern.slf4j.Slf4j;
@@ -33,10 +37,19 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @ControllerAdvice
 public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
-	
+
+	private static final String MSG_MIDIA_NAO_SUPORTADA = "Tipo de mídia não suportada. Por favor, "
+			+ "verifique o formato da requisição.";
+
 	private static final String MSG_RECURSO_NAO_EXISTE = "Não existe o recurso '%s' que você tentou acessar.";
 	
 	private static final String MSG_REQUISICAO_INVALIDA = "O corpo da requisição esta inválido, verifique erro de sintaxe.";
+	
+	private static final String MSG_PARAMETRO_INVALIDO = "O parâmetro de URL '%s' recebeu o valor '%s' que é de "
+			+ "um tipo inválido. Por favor, verifique e informe um valor compatível com o tipo '%s'.";
+	
+	private static final String MSG_TIPO_VALOR_INVALIDO = "A propriedade '%s' recebeu o valor '%s' que é um "
+			+ "tipo inválido. Por favor, corrija e informe um valor compatível com o tipo '%s'.";
 
 	private static final String MSG_PROPRIEDADE_NAO_EXISTE = "A propriedade '%s' não existe. Por favor, verifique "
 			+ "a requisição enviada e tente novamente.";
@@ -68,8 +81,26 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 			return handleMethodArgumentNotValid((MethodArgumentNotValidException) rootCause, headers, status, request);
 		}
 		
+		if (rootCause instanceof InvalidFormatException) {
+			return handleInvalidFormat((InvalidFormatException) rootCause, headers, status, request);
+		}
+		
 		ProblemType problemType = ProblemType.MENSAGEM_INCOMPREENSIVEL;
 		String detail = MSG_REQUISICAO_INVALIDA;
+		
+		Problem problem = createProblemBuilder(status, problemType, detail)
+				.userMessage(detail)
+				.build();
+		
+		return handleExceptionInternal(ex, problem, new HttpHeaders(), status, request);
+	}
+
+	@Override
+	protected ResponseEntity<Object> handleHttpMediaTypeNotSupported(HttpMediaTypeNotSupportedException ex,
+			HttpHeaders headers, HttpStatus status, WebRequest request) {
+		
+		ProblemType problemType = ProblemType.MIDIA_NAO_SUPORTADA;
+		String detail = MSG_MIDIA_NAO_SUPORTADA;
 		
 		Problem problem = createProblemBuilder(status, problemType, detail)
 				.userMessage(detail)
@@ -105,6 +136,22 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		return handleValidationInternal(ex, ex.getBindingResult(), new HttpHeaders(), status, request);
 	}
+	
+	private ResponseEntity<Object> handleInvalidFormat(InvalidFormatException ex, HttpHeaders headers,
+			HttpStatus status, WebRequest request) {
+		String path = joinPath(ex.getPath());
+		
+		ProblemType problemType = ProblemType.MENSAGEM_INCOMPREENSIVEL;
+		
+		String detail = String.format(MSG_TIPO_VALOR_INVALIDO, 
+				path, ex.getValue(), ex.getTargetType().getSimpleName());
+		
+		Problem problem = createProblemBuilder(status, problemType, detail)
+				.userMessage(detail)
+				.build();
+		
+		return handleExceptionInternal(ex, problem, headers, status, request);
+	}
 
 	private ResponseEntity<Object> handlePropertyBinding(PropertyBindingException ex, HttpHeaders headers,
 			HttpStatus status, WebRequest request) {
@@ -113,6 +160,30 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
 		String path = joinPath(ex.getPath());
 		
 		String detail = String.format(MSG_PROPRIEDADE_NAO_EXISTE, path);
+		
+		Problem problem = createProblemBuilder(status, problemType, detail)
+				.userMessage(detail)
+				.build();
+		
+		return handleExceptionInternal(ex, problem, headers, status, request);
+	}
+	
+	@Override
+	protected ResponseEntity<Object> handleTypeMismatch(TypeMismatchException ex, HttpHeaders headers,
+			HttpStatus status, WebRequest request) {
+		
+		if (ex instanceof MethodArgumentTypeMismatchException) {
+			return handleMethodArgumentTypeMismatch((MethodArgumentTypeMismatchException) ex, headers, status, request);
+		}
+		
+		return super.handleTypeMismatch(ex, headers, status, request);
+	}
+
+	private ResponseEntity<Object> handleMethodArgumentTypeMismatch(MethodArgumentTypeMismatchException ex, HttpHeaders headers,
+			HttpStatus status, WebRequest request) {
+		ProblemType problemType = ProblemType.PARAMETRO_INVALIDO;
+		
+		String detail = String.format(MSG_PARAMETRO_INVALIDO, ex.getName(), ex.getValue(), ex.getRequiredType().getSimpleName());
 		
 		Problem problem = createProblemBuilder(status, problemType, detail)
 				.userMessage(detail)

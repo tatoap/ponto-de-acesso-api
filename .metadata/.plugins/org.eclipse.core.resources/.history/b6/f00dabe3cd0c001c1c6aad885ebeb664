@@ -1,0 +1,8 @@
+NotBlank={0} é obrigatório
+NotNull={0} é obrigatório
+typeMismatch.java.time.OffsetDateTime={0} deve ser uma data/hora válido
+typeMismatch.java.lang.Long={0} deve ser um número válido
+
+#CategoriaUsuario
+categoriaUsuarioInput.id=Código da categoria do usuário
+categoriaUsuarioInput.descricao=Descrição da categoria do usuário
